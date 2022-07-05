@@ -11,7 +11,7 @@ github: leofn
 linkedin: leofn-labhdufba
 date: "`r format(Sys.time(), '%B %Y')`"
 profilepic: Foto_close_color.jpg
-bibliography: [packages.bib]
+bibliography: packages.bib
 output: 
   vitae::awesomecv:
     page_total: true
@@ -60,7 +60,7 @@ tribble(
 
 ```{r}
 library(dplyr)
-
+[@    ]
 knitr::write_bib(file = 'packages.bib')
 #knitr::write_bib(c("vitae", "tibble"), "packages.bib")
 
