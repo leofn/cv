@@ -2,7 +2,7 @@ name: Render and Deploy CV
 
 on:
   push:
-    branches: [main]
+    branches: [main, master]
     paths:
       - '**.qmd'
       - '**.bib'
@@ -32,7 +32,7 @@ jobs:
       
       - name: Install R packages
         run: |
-          install.packages(c("dplyr", "knitr", "glue", "scholar", "RefManageR"))
+          install.packages(c("dplyr", "knitr", "glue"))
         shell: Rscript {0}
       
       - name: Setup Quarto
@@ -41,6 +41,10 @@ jobs:
       - name: Render CV
         run: |
           quarto render cv_leonardo_nascimento.qmd --output-dir _site
+      
+      - name: Rename to index.html
+        run: |
+          mv _site/cv_leonardo_nascimento.html _site/index.html
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
