@@ -1,0 +1,176 @@
+/* ==============================================================================
+   CV Styles - Leonardo F. Nascimento
+   ============================================================================== */
+
+/* Contact info bar */
+.contact-info {
+  background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.contact-info a {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.contact-info a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* Skills grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.skill-category {
+  background: #f8f9fa;
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+}
+
+.skill-category h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  margin: 1rem 0;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  padding: 0.75rem;
+  background: #f1f3f4;
+  border-bottom: 2px solid #dee2e6;
+  font-weight: 600;
+}
+
+td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #dee2e6;
+  vertical-align: top;
+}
+
+tr:hover {
+  background: #f8f9fa;
+}
+
+/* Publications section */
+#refs {
+  margin-top: 1rem;
+}
+
+#refs > div {
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  background: #fafafa;
+  border-radius: 6px;
+  border-left: 3px solid #3498db;
+}
+
+.publications-note {
+  font-size: 0.85rem;
+  color: #666;
+  font-style: italic;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background: #fff3cd;
+  border-radius: 4px;
+}
+
+/* Section headers */
+h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+  margin-top: 2.5rem;
+}
+
+/* Footer */
+.footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #dee2e6;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Dark mode adjustments */
+.dark .contact-info {
+  background: linear-gradient(135deg, #1a252f 0%, #2980b9 100%);
+}
+
+.dark .skill-category {
+  background: #2d2d2d;
+}
+
+.dark .skill-category h3 {
+  color: #ecf0f1;
+}
+
+.dark th {
+  background: #2d2d2d;
+}
+
+.dark tr:hover {
+  background: #3d3d3d;
+}
+
+.dark #refs > div {
+  background: #2d2d2d;
+}
+
+.dark .publications-note {
+  background: #3d3528;
+  color: #ffc107;
+}
+
+/* Print styles */
+@media print {
+  .contact-info {
+    background: #333 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  
+  .toc {
+    display: none;
+  }
+  
+  h2 {
+    page-break-after: avoid;
+  }
+  
+  table {
+    page-break-inside: avoid;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-info {
+    font-size: 0.85rem;
+    padding: 1rem;
+  }
+  
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}

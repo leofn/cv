@@ -1,0 +1,128 @@
+---
+title: "Leonardo Fernandes Nascimento"
+subtitle: "Computational Social Scientist"
+format:
+  html:
+    theme: flatly
+    toc: true
+    toc-location: left
+    minimal: true
+    embed-resources: true
+    include-in-header:
+      text: |
+        <meta name="description" content="CV of Leonardo Fernandes Nascimento - Computational Social Scientist, Digital Humanities, UFBA">
+        <meta name="keywords" content="computational social science, digital humanities, misinformation, telegram, brazil">
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Leonardo Fernandes Nascimento",
+          "jobTitle": "Adjunct Professor",
+          "affiliation": "Federal University of Bahia (UFBA)",
+          "email": "leofn3@gmail.com",
+          "url": "https://leofn.com",
+          "sameAs": [
+            "https://github.com/leofn",
+            "https://orcid.org/0000-0003-2907-8338",
+            "https://linkedin.com/in/leofn-labhdufba"
+          ]
+        }
+        </script>
+        <style>
+          .download-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #2c3e50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 5px 10px 0;
+            cursor: pointer;
+            border: none;
+            font-size: 14px;
+          }
+          .download-btn:hover { background: #3498db; color: white; }
+          .contact-list { list-style: none; padding: 0; }
+          .contact-list li { display: inline; margin-right: 15px; }
+          @media print {
+            .download-btn, .toc { display: none !important; }
+            body { font-size: 11pt; }
+          }
+        </style>
+date: last-modified
+date-format: "MMMM YYYY"
+bibliography: publications.bib
+csl: apa.csl
+nocite: '@*'
+---
+
+<button class="download-btn" onclick="window.print()">⬇ Download PDF</button>
+
+## Contact
+
+- **Email:** leofn3@gmail.com
+- **Website:** [leofn.com](https://leofn.com)
+- **GitHub:** [github.com/leofn](https://github.com/leofn)
+- **ORCID:** [0000-0003-2907-8338](https://orcid.org/0000-0003-2907-8338)
+- **LinkedIn:** [leofn-labhdufba](https://linkedin.com/in/leofn-labhdufba)
+
+## Summary
+
+Brazilian expert in computational social science and Digital Humanities. Coordinator of the Digital Humanities Laboratory at UFBA since 2018. Research focuses on far-right groups on Telegram, hate speech, and misinformation in Brazil.
+
+## Current Positions
+
+- **Adjunct Professor** — Federal University of Bahia (UFBA), 2016–Present
+- **Research Director** — Digital Humanities Lab at UFBA, 2018–Present
+- **Member** — Administrative Council for Economic Defense, Ministry of Justice, 2024–Present
+
+## Education
+
+| Period | Degree | Institution |
+|--------|--------|-------------|
+| 2009–2013 | PhD in Sociology | State University of Rio de Janeiro (UERJ) |
+| 2010–2011 | PhD (joint) | EHESS, Paris |
+| 2005–2007 | Master's in Sociology | University of São Paulo (USP) |
+| 1998–2003 | Bachelor's in Psychology | Federal University of Bahia (UFBA) |
+
+## Professional Experience
+
+| Period | Role | Organization |
+|--------|------|--------------|
+| 2023–2024 | General Manager, Data Science | Government of Pernambuco |
+| 2022–2023 | Postdoctoral Researcher | University of Alberta |
+| 2014–2016 | Postdoctoral Fellow | UFBA |
+| 2013–2014 | Consultant | Fundação Joaquim Nabuco |
+| 2013 | Consultant | Fiocruz |
+
+## Skills
+
+**Programming:** R, Python
+
+**Tools:** Tidyverse, Quarto, Git, GitHub, ATLAS.ti, Gephi, Elasticsearch, Kibana
+
+**Languages:** Portuguese (native), English, French, Spanish (proficient)
+
+## Research Interests
+
+- Digital Sociology
+- Computational Social Science
+- Misinformation and Hate Speech
+- Social Media Studies
+- Digital Humanities
+
+## Funded Projects
+
+| Year | Funder | Project |
+|------|--------|---------|
+| 2022 | CNPq (402940/2022-9) | Disinformation ecosystem on Telegram |
+| 2022 | InternetLab | Digital Democracy: Telegram during 2022 elections |
+
+## Publications
+
+::: {#refs}
+:::
+
+---
+
+*Last updated: January 2025*
