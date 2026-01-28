@@ -68,20 +68,20 @@ nocite: '@*'
 
 ## Summary
 
-Brazilian expert in computational social science and Digital Humanities. Coordinator of the Digital Humanities Laboratory at UFBA since 2018. Research focuses on far-right groups on Telegram, hate speech, and misinformation in Brazil.
+Brazilian computational social scientist and CNPq Research Productivity Fellow. PhD in Sociology with doctoral fellowship at EHESS Paris and visiting research at University of Alberta. Coordinator of the Digital Humanities Laboratory at UFBA since 2018. Currently Data Analyst at CADE (antitrust authority) and IPEA Fellow. Research focuses on disinformation, hate speech, and political extremism in digital ecosystems.
 
 ## Current Positions
 
 - **Adjunct Professor** — Federal University of Bahia (UFBA), 2016–Present
 - **Research Director** — Digital Humanities Lab at UFBA, 2018–Present
-- **Member** — Administrative Council for Economic Defense, Ministry of Justice, 2024–Present
+- **Data Analyst** — Administrative Council for Economic Defense, Ministry of Justice, 2024–Present
 
 ## Education
 
 | Period | Degree | Institution |
 |--------|--------|-------------|
 | 2009–2013 | PhD in Sociology | State University of Rio de Janeiro (UERJ) |
-| 2010–2011 | PhD (joint) | EHESS, Paris |
+| 2010–2011 | PhD (joint) | Ecole des Hautes Etudes en Sciences Sociales (EHESS), Paris |
 | 2005–2007 | Master's in Sociology | University of São Paulo (USP) |
 | 1998–2003 | Bachelor's in Psychology | Federal University of Bahia (UFBA) |
 
@@ -89,6 +89,7 @@ Brazilian expert in computational social science and Digital Humanities. Coordin
 
 | Period | Role | Organization |
 |--------|------|--------------|
+| 2026–2026 | Visiting Professor | University of Alberta |
 | 2023–2024 | General Manager, Data Science | Government of Pernambuco |
 | 2022–2023 | Postdoctoral Researcher | University of Alberta |
 | 2014–2016 | Postdoctoral Fellow | UFBA |
@@ -101,7 +102,7 @@ Brazilian expert in computational social science and Digital Humanities. Coordin
 
 **Tools:** Tidyverse, Quarto, Git, GitHub, ATLAS.ti, Gephi, Elasticsearch, Kibana
 
-**Languages:** Portuguese (native), English, French, Spanish (proficient)
+**Languages:** Portuguese (native), English, French, Spanish
 
 ## Research Interests
 
