@@ -140,7 +140,7 @@ Brazilian computational social scientist and CNPq Research Productivity Fellow (
 | 2022–2023 | Postdoctoral Researcher | University of Alberta |
 | 2014–2016 | Postdoctoral Fellow (PNPD/CAPES) | UFBA |
 | 2013–2014 | Research Consultant | Fundação Joaquim Nabuco |
-| 2013 | Research Consultant | Fiocruz |
+| 2013-2013 | Research Consultant | Fiocruz |
 
 ## Technical Skills
 
