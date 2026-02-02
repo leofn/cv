@@ -3069,11 +3069,31 @@ border: none;
 font-size: 14px;
 }
 .download-btn:hover { background: #3498db; color: white; }
-.contact-list { list-style: none; padding: 0; }
-.contact-list li { display: inline; margin-right: 15px; }
+.metrics-box {
+background: #f8f9fa;
+border-left: 4px solid #2c3e50;
+padding: 15px;
+margin: 15px 0;
+}
+.metrics-box strong { color: #2c3e50; }
+.skill-category { margin-bottom: 10px; }
+.skill-pills span {
+display: inline-block;
+background: #e9ecef;
+padding: 2px 8px;
+border-radius: 3px;
+margin: 2px;
+font-size: 0.9em;
+}
+.pub-count {
+color: #6c757d;
+font-size: 0.9em;
+font-weight: normal;
+}
 @media print {
 .download-btn, .toc { display: none !important; }
 body { font-size: 11pt; }
+.metrics-box { break-inside: avoid; }
 }
 </style>
 
@@ -3093,10 +3113,19 @@ body { font-size: 11pt; }
   <li><a href="#current-positions" id="toc-current-positions" class="nav-link" data-scroll-target="#current-positions">Current Positions</a></li>
   <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education">Education</a></li>
   <li><a href="#professional-experience" id="toc-professional-experience" class="nav-link" data-scroll-target="#professional-experience">Professional Experience</a></li>
-  <li><a href="#skills" id="toc-skills" class="nav-link" data-scroll-target="#skills">Skills</a></li>
+  <li><a href="#technical-skills" id="toc-technical-skills" class="nav-link" data-scroll-target="#technical-skills">Technical Skills</a></li>
   <li><a href="#research-interests" id="toc-research-interests" class="nav-link" data-scroll-target="#research-interests">Research Interests</a></li>
   <li><a href="#funded-projects" id="toc-funded-projects" class="nav-link" data-scroll-target="#funded-projects">Funded Projects</a></li>
-  <li><a href="#publications" id="toc-publications" class="nav-link" data-scroll-target="#publications">Publications</a></li>
+  <li><a href="#supervision" id="toc-supervision" class="nav-link" data-scroll-target="#supervision">Supervision</a></li>
+  <li><a href="#publications" id="toc-publications" class="nav-link" data-scroll-target="#publications">Publications</a>
+  <ul class="collapse">
+  <li><a href="#books" id="toc-books" class="nav-link" data-scroll-target="#books">Books</a></li>
+  <li><a href="#peer-reviewed-articles" id="toc-peer-reviewed-articles" class="nav-link" data-scroll-target="#peer-reviewed-articles">Peer-Reviewed Articles</a></li>
+  <li><a href="#book-chapters" id="toc-book-chapters" class="nav-link" data-scroll-target="#book-chapters">Book Chapters</a></li>
+  <li><a href="#technical-reports-conference-papers" id="toc-technical-reports-conference-papers" class="nav-link" data-scroll-target="#technical-reports-conference-papers">Technical Reports &amp; Conference Papers</a></li>
+  <li><a href="#theses-dissertations" id="toc-theses-dissertations" class="nav-link" data-scroll-target="#theses-dissertations">Theses &amp; Dissertations</a></li>
+  </ul></li>
+  <li><a href="#academic-service" id="toc-academic-service" class="nav-link" data-scroll-target="#academic-service">Academic Service</a></li>
   </ul>
 </nav>
 </div>
@@ -3118,7 +3147,7 @@ body { font-size: 11pt; }
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 2026</p>
+      <p class="date">February 2026</p>
     </div>
   </div>
   
@@ -3136,23 +3165,50 @@ body { font-size: 11pt; }
 <section id="contact" class="level2">
 <h2 data-anchor-id="contact">Contact</h2>
 <ul>
-<li><strong>Email:</strong> leofn3@gmail.com</li>
+<li><strong>Email:</strong> <a href="mailto:leofn3@gmail.com">leofn3@gmail.com</a></li>
 <li><strong>Website:</strong> <a href="https://leofn.com">leofn.com</a></li>
 <li><strong>GitHub:</strong> <a href="https://github.com/leofn">github.com/leofn</a></li>
 <li><strong>ORCID:</strong> <a href="https://orcid.org/0000-0003-2907-8338">0000-0003-2907-8338</a></li>
+<li><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=essj6yQAAAAJ">https://scholar.google.com/citations?user=essj6yQAAAAJ</a></li>
+<li><strong>Lattes:</strong> <a href="http://lattes.cnpq.br/7141811368487014">Link</a></li>
 <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/leofn-labhdufba">leofn-labhdufba</a></li>
 </ul>
 </section>
 <section id="summary" class="level2">
 <h2 data-anchor-id="summary">Summary</h2>
-<p>Brazilian computational social scientist and CNPq Research Productivity Fellow. PhD in Sociology with doctoral fellowship at EHESS Paris and visiting research at University of Alberta. Coordinator of the Digital Humanities Laboratory at UFBA since 2018. Currently Data Analyst at CADE (antitrust authority) and IPEA Fellow. Research focuses on disinformation, hate speech, and political extremism in digital ecosystems.</p>
+<p>Brazilian computational social scientist and CNPq Research Productivity Fellow (PQ-2). PhD in Sociology with doctoral fellowship at EHESS Paris and visiting research at University of Alberta. Coordinator of the Digital Humanities Laboratory at UFBA since 2018. Currently Data Analyst at CADE (antitrust authority) and IPEA Fellow. Research focuses on disinformation, hate speech, and political extremism in digital ecosystems, combining NLP techniques, network analysis, and qualitative methods.</p>
+<div class="metrics-box">
+<p><strong>Impact Metrics</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Google Scholar</th>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">h-index: <strong>10</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Citations: <strong>559</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 <section id="current-positions" class="level2">
 <h2 data-anchor-id="current-positions">Current Positions</h2>
 <ul>
 <li><strong>Adjunct Professor</strong> — Federal University of Bahia (UFBA), 2016–Present</li>
-<li><strong>Research Director</strong> — Digital Humanities Lab at UFBA, 2018–Present</li>
-<li><strong>Data Analyst</strong> — Administrative Council for Economic Defense, Ministry of Justice, 2024–Present</li>
+<li><strong>Research Director</strong> — Digital Humanities Lab at UFBA (<a href="http://www.labhd.ufba.br/">LABHDUFBA</a>), 2018–Present</li>
+<li><strong>Data Analyst</strong> — Administrative Council for Economic Defense (CADE), Ministry of Justice, 2024–Present</li>
+<li><strong>CNPq Research Productivity Fellow</strong> — Level 2, 2022–Present</li>
 </ul>
 </section>
 <section id="education" class="level2">
@@ -3178,8 +3234,8 @@ body { font-size: 11pt; }
 </tr>
 <tr class="even">
 <td>2010–2011</td>
-<td>PhD (joint)</td>
-<td>Ecole des Hautes Etudes en Sciences Sociales (EHESS), Paris</td>
+<td>PhD Sandwich (CAPES)</td>
+<td>École des Hautes Études en Sciences Sociales (EHESS), Paris</td>
 </tr>
 <tr class="odd">
 <td>2005–2007</td>
@@ -3206,7 +3262,7 @@ body { font-size: 11pt; }
 </thead>
 <tbody>
 <tr class="odd">
-<td>2026–2026</td>
+<td>2026</td>
 <td>Visiting Professor</td>
 <td>University of Alberta</td>
 </tr>
@@ -3222,37 +3278,55 @@ body { font-size: 11pt; }
 </tr>
 <tr class="even">
 <td>2014–2016</td>
-<td>Postdoctoral Fellow</td>
+<td>Postdoctoral Fellow (PNPD/CAPES)</td>
 <td>UFBA</td>
 </tr>
 <tr class="odd">
 <td>2013–2014</td>
-<td>Consultant</td>
+<td>Research Consultant</td>
 <td>Fundação Joaquim Nabuco</td>
 </tr>
 <tr class="even">
 <td>2013</td>
-<td>Consultant</td>
+<td>Research Consultant</td>
 <td>Fiocruz</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="skills" class="level2">
-<h2 data-anchor-id="skills">Skills</h2>
-<p><strong>Programming:</strong> R, Python</p>
-<p><strong>Tools:</strong> Tidyverse, Quarto, Git, GitHub, ATLAS.ti, Gephi, Elasticsearch, Kibana</p>
-<p><strong>Languages:</strong> Portuguese (native), English, French, Spanish</p>
+<section id="technical-skills" class="level2">
+<h2 data-anchor-id="technical-skills">Technical Skills</h2>
+<div class="skill-category">
+<p><strong>Programming &amp; Data Analysis</strong></p>
+<div class="skill-pills">
+<p><span>R</span> <span>Python</span> <span>SQL</span></p>
+</div>
+<ul>
+<li><strong>R ecosystem:</strong> tidyverse, rvest, httr2, quanteda, stm, igraph, ggplot2, Shiny</li>
+<li><strong>Python:</strong> pandas, spaCy, NLTK, networkx, selenium, BeautifulSoup</li>
+<li><strong>NLP:</strong> topic modeling (LDA/STM), sentiment analysis, word embeddings, NER</li>
+<li><strong>LLM:</strong> retrieval-augmented generation, agents for social science tasks</li>
+</ul>
+</div>
+<div class="skill-category">
+<p><strong>Infrastructure &amp; Tools</strong></p>
+<div class="skill-pills">
+<p><span>Git/GitHub</span> <span>Docker</span> <span>Quarto</span> <span>Elasticsearch</span> <span>Kibana</span></p>
+</div>
+<ul>
+<li><strong>CAQDAS:</strong> ATLAS.ti, NVivo</li>
+<li><strong>Visualization:</strong> Gephi, Flourish</li>
+<li><strong>Reproducibility:</strong> Quarto, renv, Docker, GitHub Actions</li>
+</ul>
+</div>
+<div class="skill-category">
+<p><strong>Languages</strong></p>
+<p>Portuguese (native), English (advanced), French (fluent), Spanish (intermediate)</p>
+</div>
 </section>
 <section id="research-interests" class="level2">
 <h2 data-anchor-id="research-interests">Research Interests</h2>
-<ul>
-<li>Digital Sociology</li>
-<li>Computational Social Science</li>
-<li>Misinformation and Hate Speech</li>
-<li>Social Media Studies</li>
-<li>Digital Humanities</li>
-</ul>
+<p>Digital Sociology • Computational Social Science • Disinformation &amp; Hate Speech • Platform Studies • Digital Humanities • Mixed Methods • Science &amp; Technology Studies</p>
 </section>
 <section id="funded-projects" class="level2">
 <h2 data-anchor-id="funded-projects">Funded Projects</h2>
@@ -3271,7 +3345,7 @@ body { font-size: 11pt; }
 </thead>
 <tbody>
 <tr class="odd">
-<td>2022</td>
+<td>2022–present</td>
 <td>CNPq (402940/2022-9)</td>
 <td>Disinformation ecosystem on Telegram</td>
 </tr>
@@ -3283,129 +3357,192 @@ body { font-size: 11pt; }
 </tbody>
 </table>
 </section>
+<section id="supervision" class="level2">
+<h2 data-anchor-id="supervision">Supervision</h2>
+<div class="metrics-box">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: center;">Completed</th>
+<th style="text-align: center;">In Progress</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>PhD</strong></td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Master’s</strong></td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Postdoc</strong></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Undergraduate (IC)</strong></td>
+<td style="text-align: center;">14</td>
+<td style="text-align: center;">3</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
 <section id="publications" class="level2">
 <h2 data-anchor-id="publications">Publications</h2>
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
-<div id="ref-alves2018health" class="csl-entry" role="listitem">
-Alves, P. C., &amp; Nascimento, L. F. (2018a). Health and traditional fishing in all saints bay, brazil. <em>International Journal of Advances in Social Science and Humanities</em>.
-</div>
-<div id="ref-alves2018fronteiras" class="csl-entry" role="listitem">
-Alves, P. C., &amp; Nascimento, L. F. (2018b). <em>Novas fronteiras metodológicas nas ciências sociais</em>. EDUFBA.
-</div>
-<div id="ref-andrade2025lexzilla" class="csl-entry" role="listitem">
-Andrade, J. P., &amp; Nascimento, L. F. (2025). Lexzilla - monitor ALEPE. <em>Planejamento e Foco</em>, <em>2</em>, 2170–2181.
+<section id="books" class="level3">
+<h3 data-anchor-id="books">Books</h3>
+<div id="refs-books" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-brasil2025cadernos" class="csl-entry" role="listitem">
+Brasil, M., &amp; Nascimento, L. F. (eds.) (2025). <em>Cadernos de evidências em direitos humanos: 1º ciclo da <span class="nocase">Rede Nacional de Evidências em Direitos Humanos</span> (<span>ReneDH</span>)</em>. Brasília: Ministério dos Direitos Humanos.
 </div>
 <div id="ref-barros2022historia" class="csl-entry" role="listitem">
-Barros, J., &amp; Nascimento, L. F. (2022). <em>História digital: A historiografia diante dos recursos e demandas de um novo tempo</em>. EDUFBA.
-</div>
-<div id="ref-bernardes2023monitor" class="csl-entry" role="listitem">
-Bernardes, Í., &amp; Nascimento, L. F. (2023). MONITOR ALEPE: Solucionando problemas de classificação com uso de inteligência artificial. <em>16º Congresso de Gestão Pública Do Rio Grande Do Norte (CONGESP/RN)</em>, <em>16</em>.
-</div>
-<div id="ref-brandao2021enfermeira" class="csl-entry" role="listitem">
-Brandão, M. F., Silva, G. T. R., &amp; Nascimento, L. F. (2021). Panorama da imagem social da enfermeira divulgada na mídia impressa. <em>Acta Paulista de Enfermagem</em>, <em>34</em>, eAPE002935.
-</div>
-<div id="ref-brasil2020historia" class="csl-entry" role="listitem">
-Brasil, E., &amp; Nascimento, L. F. (2020). História digital: Reflexões a partir da hemeroteca digital brasileira e do uso de CAQDAS na reelaboração da pesquisa histórica. <em>Estudos Históricos (Rio de Janeiro)</em>, <em>33</em>(69), 196–219.
-</div>
-<div id="ref-nascimento2022hemeroteca" class="csl-entry" role="listitem">
-Brasil, E., &amp; Nascimento, L. F. (2022a). A ferramenta de busca da hemeroteca digital brasileira e o ofício do historiador: Reflexões para a história digital. <em>Caminhos Da História Digital No Brasil</em>, 369.
-</div>
-<div id="ref-nascimento2022historia" class="csl-entry" role="listitem">
-Brasil, E., &amp; Nascimento, L. F. (2022b). Por uma história social digital: O uso de CAQDAS na pesquisa e escrita da história. In <em>História digital: A historiografia diante dos recursos e demandas de um novo tempo</em>. EDUFBA.
-</div>
-<div id="ref-brasil2025cadernos" class="csl-entry" role="listitem">
-Brasil, M., &amp; Nascimento, L. F. (2025). <em>Cadernos de evidências em direitos humanos: 1º ciclo da rede nacional de evidências em direitos humanos (ReneDH)</em>. Ministério dos Direitos Humanos.
-</div>
-<div id="ref-cesarino2023unesco" class="csl-entry" role="listitem">
-Cesarino, L., Fonseca, P., &amp; Nascimento, L. F. (2023). <em>Far-right publics on brazilian telegram: A mixed-methods approach to digital anthropology</em> (11). UNESCO Digital Library.
-</div>
-<div id="ref-feres2013lobato" class="csl-entry" role="listitem">
-Feres Júnior, J., Eisenberg, Z., &amp; Nascimento, L. F. (2013). Monteiro lobato e o politicamente correto. <em>Dados</em>, <em>56</em>, 69–108.
-</div>
-<div id="ref-feres2015pedrinho" class="csl-entry" role="listitem">
-Feres Júnior, J., Eisenberg, Z., &amp; Nascimento, L. F. (2015). Considerações sobre o politicamente correto: O caso das caçadas de pedrinho. <em>Cadernos Imbondeiro</em>, <em>4</em>(2), 23.
-</div>
-<div id="ref-nascimento2025cristao" class="csl-entry" role="listitem">
-Fonseca, P., Cesarino, L., &amp; Vasconcelos, E. (2025). &quot;Cristão não vota em comunista&quot;: Extrema-direita, cristianismo e telegram nas eleições de 2022 no brasil. In <em>Religião e cenas morais: Modos religiosos de ler e habitar o mundo</em>.
-</div>
-<div id="ref-fonseca2022demarcating" class="csl-entry" role="listitem">
-Fonseca, P., Nascimento, L. F., &amp; Ribeiro, B. E. (2022). Demarcating patriotic science on digital platforms: Covid-19, chloroquine and the institutionalisation of ignorance in brazil. <em>Science as Culture</em>, <em>31</em>(4), 530–554. <a href="https://doi.org/10.1080/09505431.2022.2062404">https://doi.org/10.1080/09505431.2022.2062404</a>
-</div>
-<div id="ref-jesus2024tradicoes" class="csl-entry" role="listitem">
-Jesus, J. P., Fonseca, P., &amp; Nascimento, L. F. (2024). Tradições de pensamento anticomunista: As teorias da conspiração e o modus operandi do golpismo em grupos bolsonaristas do telegram. <em>Polifonia</em>, <em>13</em>, 474–503.
-</div>
-<div id="ref-macedo2022weight" class="csl-entry" role="listitem">
-Macêdo, P. F. C., Nepomuceno, C. M. M., Nascimento, L. F., et al. (2022). Weight stigma in the COVID-19 pandemic: A scoping review. <em>Journal of Eating Disorders</em>, <em>10</em>(1), 44. <a href="https://doi.org/10.1186/s40337-022-00616-8">https://doi.org/10.1186/s40337-022-00616-8</a>
-</div>
-<div id="ref-nascimento2007dissertacao" class="csl-entry" role="listitem">
-Nascimento, L. F. (2007). <em>Da civilização da conduta à conduta civilizada: O processo civilizador e a psicanálise</em> [Master’s thesis]. Universidade de São Paulo.
-</div>
-<div id="ref-nascimento2013trauma_enc" class="csl-entry" role="listitem">
-Nascimento, L. F. (2013a). Historical trauma. In <em>Encyclopedia of race and racism</em>. Macmillan.
-</div>
-<div id="ref-nascimento2013tese" class="csl-entry" role="listitem">
-Nascimento, L. F. (2013b). <em>Sociologia do trauma: Elementos sociogenéticos e psicogenéticos</em> [PhD thesis]. Instituto de Estudos Sociais e Políticos, UERJ.
-</div>
-<div id="ref-nascimento2015lupton" class="csl-entry" role="listitem">
-Nascimento, L. F. (2015). Digital sociology de deborah lupton. <em>Caderno CRH</em>, <em>28</em>(75), 671–673.
-</div>
-<div id="ref-nascimento2016sociologia" class="csl-entry" role="listitem">
-Nascimento, L. F. (2016a). A sociologia digital: Um desafio para o século XXI. <em>Sociologias</em>, <em>18</em>(41), 216–241. <a href="https://doi.org/10.1590/15174522-018004014">https://doi.org/10.1590/15174522-018004014</a>
-</div>
-<div id="ref-nascimento2016uber" class="csl-entry" role="listitem">
-Nascimento, L. F. (2016b). O caso uber no brasil: Um ensaio de sociologia digital. <em>Critical Reviews on Latin American Research (CROLAR)</em>, <em>5</em>(1).
-</div>
-<div id="ref-nascimento2017webscraping" class="csl-entry" role="listitem">
-Nascimento, L. F. (2017). Combinando webscraping em r e ATLAS.ti na pesquisa em ciências sociais: As possibilidades e desafios da sociologia digital. <em>Anais Do 18º Congresso Brasileiro de Sociologia</em>.
-</div>
-<div id="ref-nascimento2018atlas" class="csl-entry" role="listitem">
-Nascimento, L. F. (2018). O uso do ATLAS.ti na pesquisa em ciências sociais: Aspectos metodológicos e epistemológicos. In <em>Novas fronteiras metodológicas nas ciências sociais</em>. EDUFBA.
+Barros, J., &amp; Nascimento, L. F. (eds.) (2022). <em>História digital: A historiografia diante dos recursos e demandas de um novo tempo</em>. Salvador: EDUFBA.
 </div>
 <div id="ref-nascimento2020sociologia" class="csl-entry" role="listitem">
-Nascimento, L. F. (2020). <em>Sociologia digital: Uma breve introdução</em>. EDUFBA.
+Nascimento, L. F. (2020). <em>Sociologia digital: Uma breve introdução</em>. Salvador: EDUFBA.
 </div>
+<div id="ref-alves2018novas" class="csl-entry" role="listitem">
+Alves, P. C., &amp; Nascimento, L. F. (eds.) (2018). <em>Novas fronteiras metodológicas nas ciências sociais</em>. Salvador: EDUFBA.
+</div>
+</div>
+</section>
+<section id="peer-reviewed-articles" class="level3">
+<h3 data-anchor-id="peer-reviewed-articles">Peer-Reviewed Articles</h3>
+<div id="refs-articles" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-andrade2025lexzilla" class="csl-entry" role="listitem">
+Andrade, J. P., &amp; Nascimento, L. F. (2025). <span>Lexzilla</span> - monitor <span>ALEPE</span>. <em>Planejamento e Foco</em>, <em>2</em>, 2170–2181.
+</div>
+<div id="ref-jesus2024tradicoes" class="csl-entry" role="listitem">
+Jesus, J. P. de, Fonseca, P., &amp; Nascimento, L. F. (2024). Tradições de pensamento anticomunista: As teorias da conspiração e o modus operandi do golpismo em grupos bolsonaristas do <span>Telegram</span>. <em>Polifonia</em>, <em>13</em>, 474–503.
+</div>
+<div id="ref-scheren2024metodos" class="csl-entry" role="listitem">
+Scheren, M. L., Rodrigues, V., &amp; Nascimento, L. F. (2024). Métodos mistos para a antropologia digital: Um relato de experiência sobre a análise de grupos bolsonaristas na plataforma <span>Telegram</span>. <em>Horizontes Antropológicos</em>.
+</div>
+<div id="ref-wedderburn2024representacoes" class="csl-entry" role="listitem">
+Wedderburn, R., Nascimento, L. F., &amp; Jesus, J. P. de (2024). Representações meméticas de &quot;nós e eles&quot;: Humor e discurso de ódio em chats do <span>Telegram</span>. <em>Aurora: Revista de Arte, Mídia e Política</em>, <em>17</em>(49), 136–173.
+</div>
+<div id="ref-nascimento2023publicos" class="csl-entry" role="listitem">
+Nascimento, L. F., Fonseca, P., &amp; Cesarino, L. (2023). Públicos refratados: A atuação de grupos de extrema-direita brasileiros na plataforma <span>Telegram</span>. <em>Revista Internet &amp; Sociedade</em>, <em>3</em>(1), 29.
+</div>
+<div id="ref-fonseca2022demarcating" class="csl-entry" role="listitem">
+Fonseca, P., Nascimento, L. F., &amp; Ribeiro, B. E. (2022). Demarcating patriotic science on digital platforms: <span>COVID-19</span>, chloroquine and the institutionalisation of ignorance in <span>Brazil</span>. <em>Science as Culture</em>, <em>31</em>(4), 530–554. <a href="https://doi.org/10.1080/09505431.2022.2062404">https://doi.org/10.1080/09505431.2022.2062404</a>.
+</div>
+<div id="ref-macedo2022weight" class="csl-entry" role="listitem">
+Macêdo, P. F. C., Nepomuceno, C. M. M., Nascimento, L. F., et al. (2022). Weight stigma in the <span>COVID-19</span> pandemic: A scoping review. <em>Journal of Eating Disorders</em>, <em>10</em>(1), 44. <a href="https://doi.org/10.1186/s40337-022-00616-8">https://doi.org/10.1186/s40337-022-00616-8</a>.
+</div>
+<div id="ref-brandao2021panorama" class="csl-entry" role="listitem">
+Brandão, M. F., Silva, G. T. R., &amp; Nascimento, L. F. (2021). Panorama da imagem social da enfermeira divulgada na mídia impressa. <em>Acta Paulista de Enfermagem</em>, <em>34</em>, eAPE002935.
+</div>
+<div id="ref-nascimento2021poder" class="csl-entry" role="listitem">
+Nascimento, L. F., Jesus, J. P. de, &amp; Fonseca, P. (2021). Poder oracular e ecossistemas digitais de comunicação: A produção de zonas de ignorância durante a pandemia de <span>COVID-19</span> no <span>Brasil</span>. <em>Revista Fronteiras</em>, <em>23</em>(2).
+</div>
+<div id="ref-brasil2020historia" class="csl-entry" role="listitem">
+Brasil, E., &amp; Nascimento, L. F. (2020). História digital: Reflexões a partir da <span>Hemeroteca Digital Brasileira</span> e do uso de <span>CAQDAS</span> na reelaboração da pesquisa histórica. <em>Estudos Históricos (Rio de Janeiro)</em>, <em>33</em>(69), 196–219.
+</div>
+<div id="ref-alves2018health" class="csl-entry" role="listitem">
+Alves, P. C., &amp; Nascimento, L. F. (2018). Health and traditional fishing in <span>All Saints Bay</span>, <span>Brazil</span>. <em>International Journal of Advances in Social Science and Humanities</em>.
+</div>
+<div id="ref-nascimento2018nao" class="csl-entry" role="listitem">
+Nascimento, L. F., Ortega, J., &amp; Alecrim, M. (2018). &quot;Não falo o que o povo quer, sou o que o povo quer&quot;: 30 anos (1987-2017) de pautas políticas de <span>Jair Bolsonaro</span> nos jornais brasileiros. <em>Plural: Revista de Ciências Sociais</em>, <em>25</em>(1), 135–171.
+</div>
+<div id="ref-nascimento2016sociologia" class="csl-entry" role="listitem">
+Nascimento, L. F. (2016a). A sociologia digital: Um desafio para o século <span>XXI</span>. <em>Sociologias</em>, <em>18</em>(41), 216–241. <a href="https://doi.org/10.1590/15174522-018004104">https://doi.org/10.1590/15174522-018004104</a>.
+</div>
+<div id="ref-nascimento2016uber" class="csl-entry" role="listitem">
+Nascimento, L. F. (2016b). O caso <span>Uber</span> no <span>Brasil</span>: Um ensaio de sociologia digital. <em>Critical Reviews on Latin American Research (CROLAR)</em>, <em>5</em>(1).
+</div>
+<div id="ref-feres2015consideracoes" class="csl-entry" role="listitem">
+Feres Júnior, J., Eisenberg, Z., &amp; Nascimento, L. F. (2015). Considerações sobre o politicamente correto: O caso das caçadas de <span>Pedrinho</span>. <em>Cadernos Imbondeiro</em>, <em>4</em>(2), 23.
+</div>
+<div id="ref-nascimento2015digital" class="csl-entry" role="listitem">
+Nascimento, L. F. (2015). Digital sociology de <span>Deborah Lupton</span>. <em>Caderno CRH</em>, <em>28</em>(75), 671–673.
+</div>
+<div id="ref-rios2015invisibilidade" class="csl-entry" role="listitem">
+Rios, C., Nascimento, L. F., &amp; Ortega, F. (2015). Da invisibilidade à epidemia: A construção narrativa do autismo na mídia impressa brasileira. <em>Interface - Comunicação, Saúde, Educação</em>, <em>19</em>(53), 325–336.
+</div>
+<div id="ref-feres2013monteiro" class="csl-entry" role="listitem">
+Feres Júnior, J., Eisenberg, Z., &amp; Nascimento, L. F. (2013). Monteiro <span>Lobato</span> e o politicamente correto. <em>Dados</em>, <em>56</em>, 69–108.
+</div>
+</div>
+</section>
+<section id="book-chapters" class="level3">
+<h3 data-anchor-id="book-chapters">Book Chapters</h3>
+<div id="refs-chapters" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-fonseca2025cristao" class="csl-entry" role="listitem">
+Fonseca, P., Cesarino, L., &amp; Vasconcelos, E. (2025). &quot;Cristão não vota em comunista&quot;: Extrema-direita, cristianismo e <span>Telegram</span> nas eleições de 2022 no <span>Brasil</span>. In <em>Religião e cenas morais: Modos religiosos de ler e habitar o mundo</em>.
+</div>
+<div id="ref-nascimento2025democracy" class="csl-entry" role="listitem">
+Nascimento, L. F., Cesarino, L., &amp; Fonseca, P. (2025a). Democracy &quot;inside out&quot;: On far-right refracted publics in <span>Brazil</span>. In <em>The routledge companion to digital media and democracy</em>. London: Routledge.
+</div>
+<div id="ref-nascimento2025intankavel" class="csl-entry" role="listitem">
+Nascimento, L. F., Cesarino, L., &amp; Fonseca, P. (2025b). Intankável o <span>Bostil</span>. In <em>Gênero e sexualidade na ruptura do direito: Disputas localizadas, epistemes</em>.
+</div>
+<div id="ref-nascimento2024intankaveis" class="csl-entry" role="listitem">
+Nascimento, L. F., Cesarino, L., &amp; Fonseca, P. (2024). &quot;Intankaveis contra o <span>Bostil</span>&quot;: Racismo, misoginia e antissemitismo em chats do <span>Telegram</span> (2020-2023). In <em>Coletânea TIC, governança da internet, gênero, raça e diversidade</em> (Vol. 4, p. 200).
+</div>
+<div id="ref-brasil2022ferramenta" class="csl-entry" role="listitem">
+Brasil, E., &amp; Nascimento, L. F. (2022a). A ferramenta de busca da <span>Hemeroteca Digital Brasileira</span> e o ofício do historiador: Reflexões para a história digital. In <em>Caminhos da história digital no brasil</em> (p. 369).
+</div>
+<div id="ref-brasil2022historia" class="csl-entry" role="listitem">
+Brasil, E., &amp; Nascimento, L. F. (2022b). Por uma história social digital: O uso de <span>CAQDAS</span> na pesquisa e escrita da história. In <em>História digital: A historiografia diante dos recursos e demandas de um novo tempo</em>. Salvador: EDUFBA.
+</div>
+<div id="ref-nascimento2018atlas" class="csl-entry" role="listitem">
+Nascimento, L. F. (2018). O uso do <span class="nocase">ATLAS.ti</span> na pesquisa em ciências sociais: Aspectos metodológicos e epistemológicos. In <em>Novas fronteiras metodológicas nas ciências sociais</em>. Salvador: EDUFBA.
+</div>
+<div id="ref-nascimento2013historical" class="csl-entry" role="listitem">
+Nascimento, L. F. (2013). Historical trauma. In <em>Encyclopedia of race and racism</em> (2nd ed.). Macmillan.
+</div>
+</div>
+</section>
+<section id="technical-reports-conference-papers" class="level3">
+<h3 data-anchor-id="technical-reports-conference-papers">Technical Reports &amp; Conference Papers</h3>
+<div id="refs-reports" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
 <div id="ref-nascimento2024humanidades" class="csl-entry" role="listitem">
 Nascimento, L. F. (2024). <em>Humanidades digitais e vigilância pela democracia</em>.
 </div>
-<div id="ref-nascimento2024intankaveis" class="csl-entry" role="listitem">
-Nascimento, L. F., Cesarino, L., &amp; Fonseca, P. (2024). &quot;Intankaveis contra o bostil&quot;: Racismo, misoginia e antissemitismo em chats do telegram (2020-2023). <em>Coletânea TIC, Governança Da Internet, Gênero, Raça e Diversidade</em>, <em>4</em>(1), 200.
+<div id="ref-bernardes2023monitor" class="csl-entry" role="listitem">
+Bernardes, Í., &amp; Nascimento, L. F. (2023). <span>MONITOR ALEPE</span>: Solucionando problemas de classificação com uso de inteligência artificial. In <em>16º congresso de gestão pública do rio grande do norte (CONGESP/RN)</em> (Vol. 16).
 </div>
-<div id="ref-nascimento2025democracy" class="csl-entry" role="listitem">
-Nascimento, L. F., Cesarino, L., &amp; Fonseca, P. (2025a). Democracy &quot;inside out&quot;: On far-right refracted publics in brazil. In <em>The routledge companion to digital media and democracy</em>. Routledge.
-</div>
-<div id="ref-nascimento2025intankavel" class="csl-entry" role="listitem">
-Nascimento, L. F., Cesarino, L., &amp; Fonseca, P. (2025b). Intankável o bostil. In <em>Gênero e sexualidade na ruptura do direito: Disputas localizadas, epistemes</em>.
-</div>
-<div id="ref-nascimento2020chloroquine" class="csl-entry" role="listitem">
-Nascimento, L. F., Fonseca, P., &amp; Cesarino, L. (2020). &quot;Quando se está morrendo afogado, até jacaré é tronco para se agarrar&quot;: Cloroquina e médicos em grupos de direita do telegram. <em>Series Lavits Covid-19</em>, 22–27.
+<div id="ref-cesarino2023farright" class="csl-entry" role="listitem">
+Cesarino, L., Fonseca, P., &amp; Nascimento, L. F. (2023). <em>Far-right publics on <span>Brazilian Telegram</span>: A mixed-methods approach to digital anthropology</em> (No. 11). UNESCO Digital Library.
 </div>
 <div id="ref-nascimento2022democracia" class="csl-entry" role="listitem">
-Nascimento, L. F., Fonseca, P., &amp; Cesarino, L. (2022). <em>Democracia digital: Análise dos ecossistemas de desinformação no telegram durante o processo eleitoral brasileiro de 2022</em>. InternetLab.
+Nascimento, L. F., Fonseca, P., &amp; Cesarino, L. (2022). <em>Democracia digital: Análise dos ecossistemas de desinformação no <span>Telegram</span> durante o processo eleitoral brasileiro de 2022</em>. São Paulo: InternetLab.
 </div>
-<div id="ref-nascimento2023refracted" class="csl-entry" role="listitem">
-Nascimento, L. F., Fonseca, P., &amp; Cesarino, L. (2023). Públicos refratados: A atuação de grupos de extrema-direita brasileiros na plataforma telegram. <em>Revista Internet &amp; Sociedade</em>, <em>3</em>(1), 29.
-</div>
-<div id="ref-nascimento2021oracular" class="csl-entry" role="listitem">
-Nascimento, L. F., Jesus, J. P., &amp; Fonseca, P. (2021). Poder oracular e ecossistemas digitais de comunicação: A produção de zonas de ignorância durante a pandemia de covid-19 no brasil. <em>Revista Fronteiras</em>, <em>23</em>(2).
-</div>
-<div id="ref-nascimento2018bolsonaro" class="csl-entry" role="listitem">
-Nascimento, L. F., Ortega, J., &amp; Alecrim, M. (2018). &quot;Não falo o que o povo quer, sou o que o povo quer&quot;: 30 anos (1987-2017) de pautas políticas de jair bolsonaro nos jornais brasileiros. <em>Plural: Revista de Ciências Sociais</em>, <em>25</em>(1), 135–171.
-</div>
-<div id="ref-rios2015autismo" class="csl-entry" role="listitem">
-Rios, C., Nascimento, L. F., &amp; Ortega, F. (2015). Da invisibilidade à epidemia: A construção narrativa do autismo na mídia impressa brasileira. <em>Interface - Comunicação, Saúde, Educação</em>, <em>19</em>(53), 325–336.
+<div id="ref-nascimento2020cloroquina" class="csl-entry" role="listitem">
+Nascimento, L. F., Fonseca, P., &amp; Cesarino, L. (2020). &quot;Quando se está morrendo afogado, até jacaré é tronco para se agarrar&quot;: Cloroquina e médicos em grupos de direita do <span>Telegram</span>. In <em>Series lavits covid-19</em> (pp. 22–27).
 </div>
 <div id="ref-russi2020proposta" class="csl-entry" role="listitem">
-Russi, P., &amp; Nascimento, L. F. (2020). <em>Proposta e processos metodológicos</em>. Instituto de Pesquisa Econômica Aplicada (Ipea).
+Russi, P., &amp; Nascimento, L. F. (2020). <em>Proposta e processos metodológicos</em>. Brasília: Instituto de Pesquisa Econômica Aplicada (Ipea).
 </div>
-<div id="ref-scheren2024metodos" class="csl-entry" role="listitem">
-Scheren, M. L., Rodrigues, V., &amp; Nascimento, L. F. (2024). Métodos mistos para a antropologia digital: Um relato de experiência sobre a análise de grupos bolsonaristas na plataforma telegram. <em>Horizontes Antropológicos</em>.
-</div>
-<div id="ref-wedderburn2024representacoes" class="csl-entry" role="listitem">
-Wedderburn, R., Nascimento, L. F., &amp; Jesus, J. P. (2024). Representações meméticas de &quot;nós e eles&quot;: Humor e discurso de ódio em chats do telegram. <em>Aurora: Revista de Arte, Mídia e Política</em>, <em>17</em>(49), 136–173.
+<div id="ref-nascimento2017webscraping" class="csl-entry" role="listitem">
+Nascimento, L. F. (2017). Combinando webscraping em <span>R</span> e <span class="nocase">ATLAS.ti</span> na pesquisa em ciências sociais: As possibilidades e desafios da sociologia digital. In <em>Anais do 18º congresso brasileiro de sociologia</em>.
 </div>
 </div>
+</section>
+<section id="theses-dissertations" class="level3">
+<h3 data-anchor-id="theses-dissertations">Theses &amp; Dissertations</h3>
+<div id="refs-theses" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-nascimento2013sociologia" class="csl-entry" role="listitem">
+Nascimento, L. F. (2013). <em>Sociologia do trauma: Elementos sociogenéticos e psicogenéticos</em> (PhD thesis). Instituto de Estudos Sociais e Políticos, UERJ, Rio de Janeiro.
+</div>
+<div id="ref-nascimento2007civilizacao" class="csl-entry" role="listitem">
+Nascimento, L. F. (2007). <em>Da civilização da conduta à conduta civilizada: O processo civilizador e a psicanálise</em> (Master’s thesis). Universidade de São Paulo, São Paulo.
+</div>
+</div>
+</section>
+</section>
+<section id="academic-service" class="level2">
+<h2 data-anchor-id="academic-service">Academic Service</h2>
+<p><strong>Examination Committees:</strong> PhD (7), Master’s (10), Pos-doc (2)</p>
 <hr>
-<p><em>Last updated: January 2025</em></p>
+<p><em>Last updated: February 2026</em></p>
 </section>
 
 </main>

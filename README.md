@@ -1,144 +1,137 @@
-# CV Acadêmico - Leonardo F. Nascimento
+# CV - Leonardo Fernandes Nascimento
 
-CV acadêmico reprodutível em **Quarto** com integração automática de publicações via Google Scholar/ORCID.
+CV acadêmico em Quarto com múltiplas bibliografias e contagem automática de publicações.
 
-## 🚀 Quick Start
+## 🚀 Deploy Rápido
+
+### Opção 1: GitHub Pages (recomendado)
+
+1. Crie um repositório `cv` no GitHub
+2. Copie todos os arquivos deste projeto para o repositório
+3. Vá em **Settings > Pages** e selecione **GitHub Actions** como source
+4. O workflow vai rodar automaticamente e publicar em `https://SEU_USUARIO.github.io/cv/`
+
+### Opção 2: Render Local
 
 ```bash
-# 1. Clone e entre no diretório
-git clone https://github.com/leofn/cv.git && cd cv
+# Instalar extensão multibib (uma vez)
+quarto add pandoc-ext/multibib --no-prompt
 
-# 2. Baixe o CSL para formatação APA (obrigatório)
-curl -sL "https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl" -o apa.csl
-
-# 3. Instale dependências R
-Rscript -e 'install.packages(c("dplyr", "knitr", "glue", "scholar", "RefManageR"))'
-
-# 4. Renderize
+# Renderizar
 quarto render cv_leonardo_nascimento.qmd
 ```
 
-## 📁 Estrutura
+## 📁 Estrutura do Projeto
 
 ```
-├── cv_leonardo_nascimento.qmd   # Fonte do CV (Quarto)
-├── publications.bib              # Publicações em BibTeX
-├── fetch_publications.R          # Script para buscar publicações
-├── styles.css                    # Estilos customizados
-├── apa.csl                       # Estilo de citação (baixar separado)
-├── _site/                        # Output renderizado
-└── .github/workflows/render.yml  # CI/CD automático
+cv/
+├── cv_leonardo_nascimento.qmd    # CV principal
+├── apa-cv.csl                    # Estilo de citação (ordenado por data desc)
+├── count-refs.lua                # Lua filter para contagem automática
+├── bib/
+│   ├── articles.bib              # Artigos em periódicos
+│   ├── books.bib                 # Livros
+│   ├── chapters.bib              # Capítulos de livros
+│   ├── reports.bib               # Relatórios e congressos
+│   └── theses.bib                # Teses e dissertações
+├── .github/
+│   └── workflows/
+│       └── publish.yml           # Deploy automático
+└── README.md
 ```
 
-## 📚 Gerenciamento de Publicações
+## ✏️ O que você precisa preencher
 
-### Opção 1: Google Scholar (recomendado)
+Busque por estes placeholders no `cv_leonardo_nascimento.qmd`:
 
-```r
-source("fetch_publications.R")
+| Placeholder | Onde encontrar |
+|------------|----------------|
+| `SEU_ID_AQUI` (Google Scholar) | URL do seu perfil no Scholar |
+| `SEU_ID_AQUI` (Lattes) | ID numérico do Lattes |
+| `h-index: **X**` | Google Scholar |
+| `Citações: **X**` | Google Scholar |
+| Orientações | Seu Lattes/memorial |
+| Valores dos projetos | Termos de outorga |
+| Seção Supervision | Seus orientandos |
+| Seção Academic Service | Bancas, pareceres, etc. |
 
-# Configure seu Google Scholar ID no script, depois:
-fetch_all_publications(source = "scholar")
+## 🔧 Como funciona
+
+### Múltiplas Bibliografias
+
+O filtro `multibib` permite separar publicações por tipo:
+
+```yaml
+bibliography:
+  articles: bib/articles.bib
+  books: bib/books.bib
+  # ...
 ```
 
-Para encontrar seu ID: acesse seu perfil no Google Scholar e copie o valor após `user=` na URL.
+Cada categoria é renderizada em uma div específica:
 
-### Opção 2: DOIs diretos (mais preciso)
-
-```r
-source("fetch_publications.R")
-
-meus_dois <- c(
-  "10.1590/1678-4685e20220157",
-  "10.1080/09505431.2022.2062404"
-)
-doi_to_bibtex(meus_dois, "publications.bib")
+```markdown
+::: {#refs-articles}
+:::
 ```
 
-### Opção 3: Manual
+### Contagem Automática
 
-Edite `publications.bib` diretamente. Formato:
+O filtro `count-refs.lua` substitui placeholders `{{count:categoria}}` pelo número de entradas:
+
+```markdown
+### Peer-Reviewed Articles {{count:articles}}
+```
+
+Renderiza como:
+
+```
+### Peer-Reviewed Articles (18)
+```
+
+### Ordenação por Data
+
+O CSL `apa-cv.csl` ordena as publicações da mais recente para a mais antiga (padrão para CVs acadêmicos).
+
+## ➕ Adicionando Publicações
+
+1. Identifique a categoria (article, book, chapter, report)
+2. Adicione a entrada BibTeX no arquivo `.bib` correspondente
+3. Commit e push — o GitHub Actions atualiza automaticamente
+
+### Exemplo de entrada
 
 ```bibtex
-@article{chave2024,
-  author = {Sobrenome, Nome},
-  title = {Título do Artigo},
-  journal = {Nome da Revista},
+@article{sobrenome2024titulo,
+  author = {Sobrenome, Nome and Coautor, Nome},
+  title = {Título do artigo},
+  journal = {Nome do Periódico},
   year = {2024},
+  volume = {10},
+  number = {2},
+  pages = {100--120},
   doi = {10.xxxx/xxxxx}
 }
 ```
 
-## 🌐 Deploy via GitHub Pages
+## 🐛 Troubleshooting
 
-### Setup inicial
+### "Unknown citation key"
+- Verifique se a chave existe no `.bib` correto
+- Verifique sintaxe BibTeX (vírgulas, chaves)
 
-1. Push para GitHub:
-   ```bash
-   git init && git add . && git commit -m "Initial commit"
-   gh repo create cv --public --source=. --push
-   ```
+### Bibliografia não aparece
+- Confirme que o filtro multibib está instalado
+- Verifique se o ID da div corresponde ao nome da bib
 
-2. Configure Pages: **Settings → Pages → Source: "GitHub Actions"**
+### Contagem mostra "(?)"
+- O Lua filter não encontrou a categoria
+- Verifique se o nome no `{{count:X}}` corresponde ao nome do arquivo `.bib`
 
-3. Cada push no `.qmd` ou `.bib` triggera rebuild automático
-
-### URLs
-
-- **CV online**: `https://leofn.github.io/cv/`
-- **Arquivo fonte**: `https://github.com/leofn/cv`
-
-## ⚙️ Customização
-
-### Temas disponíveis
-
-No YAML header do `.qmd`:
-
-```yaml
-format:
-  html:
-    theme: flatly    # ou: cosmo, journal, lumen, sandstone, simplex, yeti
-```
-
-### Estilos de citação
-
-Baixe outros estilos de [citation-style-language/styles](https://github.com/citation-style-language/styles):
-
-```bash
-# Chicago
-curl -sL "https://raw.githubusercontent.com/citation-style-language/styles/master/chicago-author-date.csl" -o chicago.csl
-
-# ABNT
-curl -sL "https://raw.githubusercontent.com/citation-style-language/styles/master/associacao-brasileira-de-normas-tecnicas.csl" -o abnt.csl
-```
-
-Atualize o `csl:` no YAML header.
-
-### Multilíngua
-
-Para versão em português, duplique o `.qmd` e traduza. O Quarto suporta múltiplos outputs:
-
-```yaml
-# _quarto.yml
-project:
-  output-dir: _site
-
-format:
-  html:
-    output-file: index.html
-```
-
-## 🔄 Workflow de Atualização
-
-1. Atualize publicações: `Rscript -e "source('fetch_publications.R'); fetch_all_publications(source='scholar')"`
-2. Edite o `.qmd` conforme necessário
-3. Commit e push → deploy automático
-
-## 📋 Dependências
-
-- [Quarto](https://quarto.org/docs/get-started/) ≥ 1.3
-- R ≥ 4.0 com pacotes: `dplyr`, `knitr`, `glue`, `scholar`, `RefManageR`
+### Erro no GitHub Actions
+- Verifique se todos os arquivos estão no repositório
+- Confira se o workflow tem permissão para Pages
 
 ## 📄 Licença
 
-CC BY 4.0
+MIT

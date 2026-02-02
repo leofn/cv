@@ -42,46 +42,92 @@ format:
             font-size: 14px;
           }
           .download-btn:hover { background: #3498db; color: white; }
-          .contact-list { list-style: none; padding: 0; }
-          .contact-list li { display: inline; margin-right: 15px; }
+          .metrics-box {
+            background: #f8f9fa;
+            border-left: 4px solid #2c3e50;
+            padding: 15px;
+            margin: 15px 0;
+          }
+          .metrics-box strong { color: #2c3e50; }
+          .skill-category { margin-bottom: 10px; }
+          .skill-pills span {
+            display: inline-block;
+            background: #e9ecef;
+            padding: 2px 8px;
+            border-radius: 3px;
+            margin: 2px;
+            font-size: 0.9em;
+          }
+          .pub-count {
+            color: #6c757d;
+            font-size: 0.9em;
+            font-weight: normal;
+          }
           @media print {
             .download-btn, .toc { display: none !important; }
             body { font-size: 11pt; }
+            .metrics-box { break-inside: avoid; }
           }
         </style>
 date: last-modified
 date-format: "MMMM YYYY"
-bibliography: publications.bib
-csl: apa.csl
-nocite: '@*'
+csl: apa-cv.csl
+filters:
+  - multibib
+  - count-refs.lua
+validate-yaml: false
+bibliography:
+  articles: bib/articles.bib
+  books: bib/books.bib
+  chapters: bib/chapters.bib
+  reports: bib/reports.bib
+  theses: bib/theses.bib
+nocite:
+  articles: '@*'
+  books: '@*'
+  chapters: '@*'
+  reports: '@*'
+  theses: '@*'
 ---
 
 <button class="download-btn" onclick="window.print()">⬇ Download PDF</button>
 
 ## Contact
 
-- **Email:** leofn3@gmail.com
+- **Email:** [leofn3@gmail.com](mailto:leofn3@gmail.com)
 - **Website:** [leofn.com](https://leofn.com)
 - **GitHub:** [github.com/leofn](https://github.com/leofn)
 - **ORCID:** [0000-0003-2907-8338](https://orcid.org/0000-0003-2907-8338)
+- **Google Scholar:** [https://scholar.google.com/citations?user=essj6yQAAAAJ](https://scholar.google.com/citations?user=essj6yQAAAAJ)
+- **Lattes:** [Link](http://lattes.cnpq.br/7141811368487014)
 - **LinkedIn:** [leofn-labhdufba](https://linkedin.com/in/leofn-labhdufba)
 
 ## Summary
 
-Brazilian computational social scientist and CNPq Research Productivity Fellow. PhD in Sociology with doctoral fellowship at EHESS Paris and visiting research at University of Alberta. Coordinator of the Digital Humanities Laboratory at UFBA since 2018. Currently Data Analyst at CADE (antitrust authority) and IPEA Fellow. Research focuses on disinformation, hate speech, and political extremism in digital ecosystems.
+Brazilian computational social scientist and CNPq Research Productivity Fellow (PQ-2). PhD in Sociology with doctoral fellowship at EHESS Paris and visiting research at University of Alberta. Coordinator of the Digital Humanities Laboratory at UFBA since 2018. Currently Data Analyst at CADE (antitrust authority) and IPEA Fellow. Research focuses on disinformation, hate speech, and political extremism in digital ecosystems, combining NLP techniques, network analysis, and qualitative methods.
+
+::: {.metrics-box}
+**Impact Metrics**
+
+| Google Scholar | 
+|:---:|:---:|:---:|
+| h-index: **10** | 
+| Citations: **559** | 
+:::
 
 ## Current Positions
 
-- **Adjunct Professor** — Federal University of Bahia (UFBA), 2016–Present
-- **Research Director** — Digital Humanities Lab at UFBA, 2018–Present
-- **Data Analyst** — Administrative Council for Economic Defense, Ministry of Justice, 2024–Present
+- **Associate Professor** — Federal University of Bahia (UFBA), 2016–Present
+- **Research Director** — Digital Humanities Lab at UFBA ([LABHDUFBA](http://www.labhd.ufba.br/)), 2018–Present
+- **Data Analyst** — Administrative Council for Economic Defense (CADE), Ministry of Justice, 2024–Present
+- **CNPq Research Productivity Fellow** — Level 2, 2022–Present
 
 ## Education
 
 | Period | Degree | Institution |
 |--------|--------|-------------|
 | 2009–2013 | PhD in Sociology | State University of Rio de Janeiro (UERJ) |
-| 2010–2011 | PhD (joint) | Ecole des Hautes Etudes en Sciences Sociales (EHESS), Paris |
+| 2010–2011 | PhD Sandwich (CAPES) | École des Hautes Études en Sciences Sociales (EHESS), Paris |
 | 2005–2007 | Master's in Sociology | University of São Paulo (USP) |
 | 1998–2003 | Bachelor's in Psychology | Federal University of Bahia (UFBA) |
 
@@ -89,41 +135,100 @@ Brazilian computational social scientist and CNPq Research Productivity Fellow. 
 
 | Period | Role | Organization |
 |--------|------|--------------|
-| 2026–2026 | Visiting Professor | University of Alberta |
+| 2026 | Visiting Professor | University of Alberta |
 | 2023–2024 | General Manager, Data Science | Government of Pernambuco |
 | 2022–2023 | Postdoctoral Researcher | University of Alberta |
-| 2014–2016 | Postdoctoral Fellow | UFBA |
-| 2013–2014 | Consultant | Fundação Joaquim Nabuco |
-| 2013 | Consultant | Fiocruz |
+| 2014–2016 | Postdoctoral Fellow (PNPD/CAPES) | UFBA |
+| 2013–2014 | Research Consultant | Fundação Joaquim Nabuco |
+| 2013 | Research Consultant | Fiocruz |
 
-## Skills
+## Technical Skills
 
-**Programming:** R, Python
+::: {.skill-category}
+**Programming & Data Analysis**
 
-**Tools:** Tidyverse, Quarto, Git, GitHub, ATLAS.ti, Gephi, Elasticsearch, Kibana
+::: {.skill-pills}
+<span>R</span> <span>Python</span> <span>SQL</span>
+:::
 
-**Languages:** Portuguese (native), English, French, Spanish
+- **R ecosystem:** tidyverse, rvest, httr2, quanteda, stm, igraph, ggplot2, Shiny
+- **Python:** pandas, spaCy, NLTK, networkx, selenium, BeautifulSoup
+- **NLP:** topic modeling (LDA/STM), sentiment analysis, word embeddings, NER
+- **LLM:** retrieval-augmented generation, agents for social science tasks
+:::
+
+::: {.skill-category}
+**Infrastructure & Tools**
+
+::: {.skill-pills}
+<span>Git/GitHub</span> <span>Docker</span> <span>Quarto</span> <span>Elasticsearch</span> <span>Kibana</span>
+:::
+
+- **CAQDAS:** ATLAS.ti, NVivo
+- **Visualization:** Gephi, Flourish
+- **Reproducibility:** Quarto, renv, Docker, GitHub Actions
+:::
+
+::: {.skill-category}
+**Languages**
+
+Portuguese (native), English (advanced), French (fluent), Spanish (intermediate)
+:::
 
 ## Research Interests
 
-- Digital Sociology
-- Computational Social Science
-- Misinformation and Hate Speech
-- Social Media Studies
-- Digital Humanities
+Digital Sociology • Computational Social Science • Disinformation & Hate Speech • Platform Studies • Digital Humanities • Mixed Methods • Science & Technology Studies
 
 ## Funded Projects
 
 | Year | Funder | Project |
 |------|--------|---------|
-| 2022 | CNPq (402940/2022-9) | Disinformation ecosystem on Telegram |
-| 2022 | InternetLab | Digital Democracy: Telegram during 2022 elections |
+| 2022–present | CNPq (402940/2022-9) | Disinformation ecosystem on Telegram | 
+| 2022 | InternetLab | Digital Democracy: Telegram during 2022 elections | 
+
+## Supervision
+
+::: {.metrics-box}
+| | Completed | In Progress |
+|:--|:--:|:--:|
+| **PhD** | 4 | 2 |
+| **Master's** | 10 | 1 |
+| **Postdoc** | 1 | 1 |
+| **Undergraduate (IC)** | 14 | 3 |
+:::
 
 ## Publications
 
-::: {#refs}
+### Books 
+
+::: {#refs-books}
 :::
+
+### Peer-Reviewed Articles 
+
+::: {#refs-articles}
+:::
+
+### Book Chapters 
+
+::: {#refs-chapters}
+:::
+
+### Technical Reports & Conference Papers 
+
+::: {#refs-reports}
+:::
+
+### Theses & Dissertations 
+
+::: {#refs-theses}
+:::
+
+## Academic Service
+
+
+**Examination Committees:** PhD (7), Master's (10), Pos-doc (2)
 
 ---
 
-*Last updated: January 2025*
+*Last updated: {{< meta date >}}*
