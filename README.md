@@ -1,6 +1,6 @@
 # CV - Leonardo Fernandes Nascimento
 
-CV acadêmico em Quarto com múltiplas bibliografias e contagem automática de publicações.
+CV acadêmico em Quarto com múltipla bibliografia e contagem automática de publicações.
 
 ## 🚀 Deploy Rápido
 
@@ -114,24 +114,5 @@ O CSL `apa-cv.csl` ordena as publicações da mais recente para a mais antiga (p
 }
 ```
 
-## 🐛 Troubleshooting
-
-### "Unknown citation key"
-- Verifique se a chave existe no `.bib` correto
-- Verifique sintaxe BibTeX (vírgulas, chaves)
-
-### Bibliografia não aparece
-- Confirme que o filtro multibib está instalado
-- Verifique se o ID da div corresponde ao nome da bib
-
-### Contagem mostra "(?)"
-- O Lua filter não encontrou a categoria
-- Verifique se o nome no `{{count:X}}` corresponde ao nome do arquivo `.bib`
-
-### Erro no GitHub Actions
-- Verifique se todos os arquivos estão no repositório
-- Confira se o workflow tem permissão para Pages
-
-## 📄 Licença
 
 MIT
