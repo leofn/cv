@@ -1,118 +1,43 @@
-# CV - Leonardo Fernandes Nascimento
+# Leonardo Fernandes Nascimento
 
-CV acadêmico em Quarto com múltipla bibliografia e contagem automática de publicações.
+**Computational Social Scientist | PhD in Sociology | CNPq Research Productivity Fellow**
 
-## 🚀 Deploy Rápido
+[![CV](https://img.shields.io/badge/CV-Online-blue)](https://leofn.github.io/cv/)
+[![ORCID](https://img.shields.io/badge/ORCID-0000--0003--2907--8338-green)](https://orcid.org/0000-0003-2907-8338)
+[![Google Scholar](https://img.shields.io/badge/Google%20Scholar-Profile-red)](https://scholar.google.com/citations?user=essj6yQAAAAJ)
 
-### Opção 1: GitHub Pages (recomendado)
+## About
 
-1. Crie um repositório `cv` no GitHub
-2. Copie todos os arquivos deste projeto para o repositório
-3. Vá em **Settings > Pages** e selecione **GitHub Actions** como source
-4. O workflow vai rodar automaticamente e publicar em `https://SEU_USUARIO.github.io/cv/`
+Brazilian computational social scientist. Coordinator of the [Digital Humanities Laboratory at UFBA](https://labhdufba.net) since 2018. Currently Data Analyst at CADE and IPEA Fellow. Research focuses on disinformation, hate speech, and political extremism in digital ecosystems.
 
-### Opção 2: Render Local
+## Current Positions
 
-```bash
-# Instalar extensão multibib (uma vez)
-quarto add pandoc-ext/multibib --no-prompt
+- **CNPq Research Productivity Fellow**
+- **Data Analyst** — CADE (Administrative Council for Economic Defense)
+- **IPEA Fellow** — Project "Politics in Polarized Times"
+- **Adjunct Professor** — Federal University of Bahia (UFBA)
+- **Coordinator** — Digital Humanities Laboratory (LABHDUFBA)
 
-# Renderizar
-quarto render cv_leonardo_nascimento.qmd
-```
+## Research Interests
 
-## 📁 Estrutura do Projeto
+`Computational Social Science` `Digital Humanities` `Misinformation` `Hate Speech` `Political Extremism` `NLP` `Data Science`
 
-```
-cv/
-├── cv_leonardo_nascimento.qmd    # CV principal
-├── apa-cv.csl                    # Estilo de citação (ordenado por data desc)
-├── count-refs.lua                # Lua filter para contagem automática
-├── bib/
-│   ├── articles.bib              # Artigos em periódicos
-│   ├── books.bib                 # Livros
-│   ├── chapters.bib              # Capítulos de livros
-│   ├── reports.bib               # Relatórios e congressos
-│   └── theses.bib                # Teses e dissertações
-├── .github/
-│   └── workflows/
-│       └── publish.yml           # Deploy automático
-└── README.md
-```
+## Skills
 
-## ✏️ O que você precisa preencher
+**Languages:** R, Python, Bash  
+**Tools:** ELK Stack, Tidyverse, Quarto, Git, Docker, ATLAS.ti, Gephi
 
-Busque por estes placeholders no `cv_leonardo_nascimento.qmd`:
+## Links
 
-| Placeholder | Onde encontrar |
-|------------|----------------|
-| `SEU_ID_AQUI` (Google Scholar) | URL do seu perfil no Scholar |
-| `SEU_ID_AQUI` (Lattes) | ID numérico do Lattes |
-| `h-index: **X**` | Google Scholar |
-| `Citações: **X**` | Google Scholar |
-| Orientações | Seu Lattes/memorial |
-| Valores dos projetos | Termos de outorga |
-| Seção Supervision | Seus orientandos |
-| Seção Academic Service | Bancas, pareceres, etc. |
+- 🌐 **Website:** [leofn.com](https://leofn.com)
+- 📄 **CV:** [leofn.github.io/cv](https://leofn.github.io/cv/)
+- 🐙 **GitHub:** [github.com/leofn](https://github.com/leofn)
+- 🔬 **LABHDUFBA:** [labhdufba.net](https://labhdufba.net)
 
-## 🔧 Como funciona
+## Contact
 
-### Múltiplas Bibliografias
+📧 leofn3@gmail.com
 
-O filtro `multibib` permite separar publicações por tipo:
+---
 
-```yaml
-bibliography:
-  articles: bib/articles.bib
-  books: bib/books.bib
-  # ...
-```
-
-Cada categoria é renderizada em uma div específica:
-
-```markdown
-::: {#refs-articles}
-:::
-```
-
-### Contagem Automática
-
-O filtro `count-refs.lua` substitui placeholders `{{count:categoria}}` pelo número de entradas:
-
-```markdown
-### Peer-Reviewed Articles {{count:articles}}
-```
-
-Renderiza como:
-
-```
-### Peer-Reviewed Articles (18)
-```
-
-### Ordenação por Data
-
-O CSL `apa-cv.csl` ordena as publicações da mais recente para a mais antiga (padrão para CVs acadêmicos).
-
-## ➕ Adicionando Publicações
-
-1. Identifique a categoria (article, book, chapter, report)
-2. Adicione a entrada BibTeX no arquivo `.bib` correspondente
-3. Commit e push — o GitHub Actions atualiza automaticamente
-
-### Exemplo de entrada
-
-```bibtex
-@article{sobrenome2024titulo,
-  author = {Sobrenome, Nome and Coautor, Nome},
-  title = {Título do artigo},
-  journal = {Nome do Periódico},
-  year = {2024},
-  volume = {10},
-  number = {2},
-  pages = {100--120},
-  doi = {10.xxxx/xxxxx}
-}
-```
-
-
-MIT
+*This CV is built with [Quarto](https://quarto.org) and deployed via GitHub Pages.*
